@@ -1,10 +1,11 @@
 import { motion, useInView } from 'framer-motion';
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import { FaGraduationCap, FaCertificate, FaLaptopCode } from 'react-icons/fa';
 
 const Education = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.1 });
+  const [filter, setFilter] = useState('all');
 
   const educationData = [
     {
@@ -20,7 +21,7 @@ const Education = () => {
       id: 2,
       type: "education",
       title: "Primary & Secondary Education",
-      institution: "Jaffna Vavadian Central College",
+      institution: "Jaffna Vayavilan Central College",
       date: "2008 - 2021",
       description: "Successfully completed GCE Ordinary Level with good results and GCE Advanced Level in Combined Mathematics, Physics, and Chemistry.",
       icon: <FaGraduationCap />
@@ -45,6 +46,11 @@ const Education = () => {
       icon: <FaCertificate />
     },
   ];
+
+  // Filter the education data based on the selected filter
+  const filteredData = educationData.filter(item => 
+    filter === 'all' || item.type === filter
+  );
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -84,19 +90,22 @@ const Education = () => {
         <div className="inline-flex rounded-md shadow-sm" role="group">
           <button
             type="button"
-            className="px-4 py-2 text-sm font-medium text-white bg-blue-600 border border-blue-600 rounded-l-lg hover:bg-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+            onClick={() => setFilter('all')}
+            className={`px-4 py-2 text-sm font-medium text-white ${filter === 'all' ? 'bg-blue-600 border-blue-600' : 'bg-gray-800 border-gray-600 hover:bg-gray-700'} border rounded-l-lg focus:z-10 focus:ring-2 focus:ring-blue-500 focus:outline-none transition-colors`}
           >
             All
           </button>
           <button
             type="button"
-            className="px-4 py-2 text-sm font-medium text-white bg-gray-800 border-t border-b border-r border-gray-600 hover:bg-gray-700 focus:z-10 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+            onClick={() => setFilter('education')}
+            className={`px-4 py-2 text-sm font-medium text-white ${filter === 'education' ? 'bg-blue-600 border-blue-600' : 'bg-gray-800 border-gray-600 hover:bg-gray-700'} border-t border-b border-r focus:z-10 focus:ring-2 focus:ring-blue-500 focus:outline-none transition-colors`}
           >
             Education
           </button>
           <button
             type="button"
-            className="px-4 py-2 text-sm font-medium text-white bg-gray-800 border border-gray-600 rounded-r-lg hover:bg-gray-700 focus:z-10 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+            onClick={() => setFilter('certificate')}
+            className={`px-4 py-2 text-sm font-medium text-white ${filter === 'certificate' ? 'bg-blue-600 border-blue-600' : 'bg-gray-800 border-gray-600 hover:bg-gray-700'} border rounded-r-lg focus:z-10 focus:ring-2 focus:ring-blue-500 focus:outline-none transition-colors`}
           >
             Certificate
           </button>
@@ -109,26 +118,43 @@ const Education = () => {
         animate={isInView ? "visible" : "hidden"}
         className="relative border-l-2 border-gray-700 ml-3 md:ml-0 md:mx-auto md:max-w-3xl"
       >
-        {educationData.map((item, index) => (
+        {filteredData.map((item, index) => (
           <motion.div
             key={item.id}
             variants={itemVariants}
+            initial="hidden"
+            animate="visible"
+            exit={{ opacity: 0, y: -20 }}
+            layout
             className={`mb-10 ml-6 ${index % 2 === 0 ? 'md:ml-auto md:mr-auto md:pl-10' : 'md:mr-auto md:ml-auto md:pr-10'} md:w-1/2`}
           >
-            <span className="absolute flex items-center justify-center w-10 h-10 rounded-full -left-5 ring-8 ring-gray-900 bg-blue-600">
+            <motion.span 
+              className="absolute flex items-center justify-center w-10 h-10 rounded-full -left-5 ring-8 ring-gray-900 bg-blue-600"
+              whileHover={{ scale: 1.2, backgroundColor: "#3B82F6" }}
+            >
               {item.icon}
-            </span>
-            <div className="p-6 bg-gray-800 rounded-lg shadow-md">
+            </motion.span>
+            <motion.div 
+              className="p-6 bg-gray-800 rounded-lg shadow-md"
+              whileHover={{ 
+                y: -5, 
+                boxShadow: "0 10px 25px -5px rgba(59, 130, 246, 0.3)" 
+              }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
               <div className="flex justify-between items-center mb-2">
-                <span className={`text-xs font-medium mr-2 px-2.5 py-0.5 rounded ${
-                  item.type === 'education' 
-                    ? 'bg-blue-900 text-blue-300' 
-                    : item.type === 'certificate' 
-                      ? 'bg-green-900 text-green-300'
-                      : 'bg-purple-900 text-purple-300'
-                }`}>
+                <motion.span 
+                  whileHover={{ scale: 1.1 }}
+                  className={`text-xs font-medium mr-2 px-2.5 py-0.5 rounded ${
+                    item.type === 'education' 
+                      ? 'bg-blue-900 text-blue-300' 
+                      : item.type === 'certificate' 
+                        ? 'bg-green-900 text-green-300'
+                        : 'bg-purple-900 text-purple-300'
+                  }`}
+                >
                   {item.type.charAt(0).toUpperCase() + item.type.slice(1)}
-                </span>
+                </motion.span>
                 <time className="text-xs font-normal text-gray-400">
                   {item.date}
                 </time>
@@ -142,7 +168,7 @@ const Education = () => {
               <p className="text-sm text-gray-400">
                 {item.description}
               </p>
-            </div>
+            </motion.div>
           </motion.div>
         ))}
       </motion.div>

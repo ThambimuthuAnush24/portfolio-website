@@ -60,16 +60,14 @@ const About = () => {
         <motion.div variants={itemVariants} className="space-y-6">
           <h3 className="text-2xl font-semibold mb-4">Who I Am</h3>
           <p className="text-gray-400 leading-relaxed">
-            I am a confident, energetic, and self-motivated third-year IT undergraduate who takes responsibility 
-            for tasks and completes them with assurance. I excel in team environments, fostering a positive 
-            work atmosphere and contributing to collective success.
+            As a proactive and enthusiastic third-year IT undergraduate, I approach responsibilities with determination and deliver results with confidence. I enjoy collaborating in team settings, promoting a supportive environment, and contributing meaningfully to shared success.
           </p>
           <p className="text-gray-400 leading-relaxed">
             I embrace challenges as opportunities for personal and professional growth, continuously improving 
             my IT abilities. My goal is to enhance the working environment while advancing my skills in the field of IT.
           </p>
           <p className="text-gray-400 leading-relaxed">
-            When I'm not coding, you can find me playing cricket, volleyball or carrom. I'm also actively involved in 
+            When I'm not coding, you can find me playing cricket, volleyball and carrom. I'm also actively involved in 
             AIESEC as a Member & Team Leader and serve as a TLA Batch Coordinator.
           </p>
         </motion.div>

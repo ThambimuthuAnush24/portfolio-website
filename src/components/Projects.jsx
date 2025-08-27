@@ -20,8 +20,8 @@ const Projects = () => {
     {
       id: 2,
       title: "Product Hub",
-      description: "A full-featured application to manage electronic products with complete CRUD functionality, user authentication, and an intuitive admin dashboard.",
-      image: "https://images.unsplash.com/photo-1557821552-17105176677c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80",
+      description: "A full-featured application to manage electronic products with complete CRUD functionality.",
+      image: "https://images.unsplash.com/photo-1468495244123-6c6c332eeece?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1021&q=80",
       categories: ["fullstack", "backend"],
       technologies: ["Spring Boot", "Thymeleaf", "HTML", "CSS", "MySQL"],
       githubLink: "https://github.com/ThambimuthuAnush24/CRUD"
@@ -29,7 +29,7 @@ const Projects = () => {
     {
       id: 3,
       title: "EduManage REST Service",
-      description: "A comprehensive student management system providing full CRUD operations for student records through RESTful endpoints with secure authentication.",
+      description: "A comprehensive student management system providing simple CRUD operations for student records through RESTful endpoints.",
       image: "https://images.unsplash.com/photo-1484417894907-623942c8ee29?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80",
       categories: ["backend"],
       technologies: ["Spring Boot", "MySQL", "Postman"],
@@ -48,7 +48,7 @@ const Projects = () => {
       id: 5,
       title: "Automatic Jaggery Maker",
       description: "Arduino-based smart hardware project to automate the jaggery production process, improving efficiency and safety through sensor integration and process optimization.",
-      image: "https://images.unsplash.com/photo-1558002038-1055e2e28cd0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
       categories: ["hardware"],
       technologies: ["Arduino", "C/C++", "Sensors", "Breadboard Prototyping", "IoT"]
     },

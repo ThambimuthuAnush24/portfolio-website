@@ -101,6 +101,31 @@ const Skills = () => {
     }
   };
 
+  // Add animation variants for skill items
+  const skillItemVariants = {
+    hidden: { opacity: 0, x: -10 },
+    visible: { 
+      opacity: 1, 
+      x: 0,
+      transition: { duration: 0.3 }
+    },
+    hover: { 
+      scale: 1.05,
+      x: 10,
+      transition: { type: "spring", stiffness: 400, damping: 10 }
+    }
+  };
+
+  // Animation variant for category titles
+  const titleVariants = {
+    hidden: { opacity: 0, y: -10 },
+    visible: { 
+      opacity: 1, 
+      y: 0,
+      transition: { duration: 0.5 }
+    }
+  };
+
   return (
     <div ref={ref} className="max-w-6xl mx-auto">
       <motion.div
@@ -116,34 +141,77 @@ const Skills = () => {
         </p>
       </motion.div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {skillCategories.map((category, index) => (
           <motion.div
             key={index}
             variants={skillVariants}
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
-            className="bg-gray-800 rounded-lg p-6 shadow-xl hover:shadow-2xl transition-shadow duration-300"
+            whileHover={{ y: -5, boxShadow: "0 10px 25px -5px rgba(59, 130, 246, 0.5)" }}
+            className="bg-gray-800/80 backdrop-blur-sm rounded-xl p-6 shadow-xl hover:shadow-blue-900/20 hover:shadow-2xl transition-all duration-300 border border-gray-700/50 flex flex-col h-full"
           >
-            <h3 className="text-xl font-semibold mb-4 text-blue-400 border-b border-gray-700 pb-2">
+            <motion.h3 
+              variants={titleVariants}
+              className="text-xl font-semibold mb-4 text-blue-400 border-b border-gray-700 pb-2 text-center"
+              whileHover={{
+                textShadow: "0 0 8px rgb(96, 165, 250)",
+                transition: { duration: 0.3 }
+              }}
+            >
               {category.title}
-            </h3>
-            <div className="space-y-3">
+            </motion.h3>
+            
+            <motion.div 
+              className="grid grid-cols-1 gap-3"
+              variants={containerVariants}
+            >
               {category.skills.map((skill, skillIndex) => (
-                <div key={skillIndex} className="flex items-center">
-                  <span className="text-2xl mr-3" style={{ color: skill.color }}>
-                    {typeof skill.icon === 'string' ? (
-                      <div className="w-8 h-8 bg-gray-600 rounded flex items-center justify-center text-white font-bold text-sm">
-                        {skill.icon}
-                      </div>
-                    ) : (
-                      skill.icon
-                    )}
-                  </span>
+                <motion.div 
+                  key={skillIndex} 
+                  className="flex items-center p-2 rounded-lg hover:bg-gray-700/50 transition-colors duration-200"
+                  variants={skillItemVariants}
+                  initial="hidden"
+                  animate={isInView ? "visible" : "hidden"}
+                  whileHover="hover"
+                  transition={{ delay: skillIndex * 0.1 }}
+                  drag="x"
+                  dragConstraints={{ left: 0, right: 0 }}
+                  dragElastic={0.1}
+                >
+                  <motion.div 
+                    className="w-10 h-10 rounded-md flex items-center justify-center mr-4"
+                    style={{ backgroundColor: `${skill.color}20` }}
+                    whileHover={{ scale: 1.2 }}
+                    whileTap={{ scale: 0.9 }}
+                  >
+                    <motion.span 
+                      className="text-2xl" 
+                      style={{ color: skill.color }}
+                      whileHover={{ rotate: 360 }}
+                      transition={{ duration: 0.6 }}
+                      animate={{ 
+                        scale: [1, 1.1, 1],
+                        transition: { 
+                          repeat: Infinity, 
+                          repeatType: "reverse", 
+                          duration: 2 
+                        }
+                      }}
+                    >
+                      {typeof skill.icon === 'string' ? (
+                        <div className="w-8 h-8 bg-gray-600 rounded flex items-center justify-center text-white font-bold text-sm">
+                          {skill.icon}
+                        </div>
+                      ) : (
+                        skill.icon
+                      )}
+                    </motion.span>
+                  </motion.div>
                   <span className="font-medium text-gray-300">{skill.name}</span>
-                </div>
+                </motion.div>
               ))}
-            </div>
+            </motion.div>
           </motion.div>
         ))}
       </div>
@@ -152,3 +220,4 @@ const Skills = () => {
 };
 
 export default Skills;
+            
