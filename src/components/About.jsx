@@ -120,7 +120,7 @@ const About = () => {
                   </div>
                   <div>
                     <div className="flex justify-between mb-1">
-                      <span>Jaffna Vavadian Central College</span>
+                      <span>Jaffna Vayavilan Central College</span>
                       <span>2008 - 2021</span>
                     </div>
                     <p className="text-sm text-gray-400 mb-2">G.C.E. Advanced Level (Physical Science Stream)</p>
