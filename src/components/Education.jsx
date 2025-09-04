@@ -49,7 +49,7 @@ const Education = () => {
       id: 5,
       type: "certificate",
       title: "Foundations of Spring Boot & MVC Architecture – Coursera",
-      date: "2025 (Ongoing)",
+      date: "2025",
       description: "It introduces the basics of Spring Boot and the Model-View-Controller (MVC) design pattern, focusing on building structured, maintainable, and efficient Java web applications. It covers core concepts like controllers, services, views, and request handling",
       icon: <FaCertificate />
     },
@@ -57,7 +57,7 @@ const Education = () => {
       id: 6,
       type: "certificate",
       title: "Full-Stack React with Spring Boot – Coursera",
-      date: "2025 (Ongoing)",
+      date: "2025",
       description: "It is a practical course that teaches how to build modern full-stack web applications using React for the frontend and Spring Boot for the backend. You’ll learn how to connect the two with REST APIs, manage data with databases, and deploy applications. The course covers building responsive UIs, handling authentication, and applying best practices for scalable app development.",
       icon: <FaCertificate />
     },
