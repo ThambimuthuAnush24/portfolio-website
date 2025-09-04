@@ -79,7 +79,7 @@ const Contact = () => {
       
       // Send email using EmailJS
       emailjs.sendForm(
-        'service_r3vgghj', // Replace with your EmailJS service ID
+        'service_6swuin8', // Replace with your EmailJS service ID
         'template_r1fmazt', // Replace with your EmailJS template ID
         form.current,
         'AzPSJ8IEBXKnqT3xV' // Replace with your EmailJS user ID
@@ -170,8 +170,8 @@ const Contact = () => {
             </div>
             <div>
               <h4 className="text-lg font-medium">Email</h4>
-              <a href="mailto:anushthambimuthu@gmail.com" className="text-gray-400 hover:text-blue-400 transition">
-                anushthambimuthu@gmail.com
+              <a href="mailto:anushthambi@gmail.com" className="text-gray-400 hover:text-blue-400 transition">
+                anushthambi@gmail.com
               </a>
             </div>
           </motion.div>
@@ -303,7 +303,7 @@ const Contact = () => {
                   animate={{ opacity: 1, y: 0 }}
                   className="mt-4 p-3 bg-green-900/50 text-green-300 rounded-md"
                 >
-                  Your message has been sent successfully to anushthambimuthu@gmail.com! I'll get back to you soon.
+                  Your message has been sent successfully to anushthambi@gmail.com! I'll get back to you soon.
                 </motion.div>
               )}
               {submitStatus === 'error' && (
