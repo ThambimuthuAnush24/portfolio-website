@@ -59,7 +59,16 @@ const Projects = () => {
       image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
       categories: ["frontend"],
       technologies: ["React", "Tailwind CSS", "Framer Motion", "Vite", "Responsive Design"],
-      githubLink: "https://github.com/anushgarg-20/portfolio",
+      githubLink: "https://github.com/ThambimuthuAnush24/portfolio-website",
+    },
+    {
+      id: 7,
+      title: "Money Manager ",
+      description: "Built a fully functional Income Tracker application with category selection, emoji icons, record management, input validation, category filtering, confirmation modals, real-time notifications, and loading indicators to enhance responsiveness and user experience.",
+      image: "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+      categories: ["fullstack"],
+      technologies: ["React", "Tailwind CSS", "Spring Boot", "MySQL", "JWT Authentication"],
+      githubLink: "https://github.com/ThambimuthuAnush24/full-stack",
     },
   ];
 

@@ -61,6 +61,14 @@ const Education = () => {
       description: "It is a practical course that teaches how to build modern full-stack web applications using React for the frontend and Spring Boot for the backend. You’ll learn how to connect the two with REST APIs, manage data with databases, and deploy applications. The course covers building responsive UIs, handling authentication, and applying best practices for scalable app development.",
       icon: <FaCertificate />
     },
+    {
+      id: 7,
+      type: "certificate",
+      title: "Introduction to DevOps – Coursera",
+      date: "2025 (In Progress)",
+      description: "Completed a foundational course covering the principles of DevOps, including continuous integration, continuous delivery, automation, and collaboration between development and operations teams.",
+      icon: <FaCertificate />
+    },
   ];
 
   // Filter the education data based on the selected filter

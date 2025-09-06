@@ -29,12 +29,12 @@ const Skills = () => {
     {
       title: "Web Development",
       skills: [
-        { name: "HTML", icon: <FaHtml5 />, color: "#E34F26" },
-        { name: "CSS", icon: <FaCss3Alt />, color: "#1572B6" },
+        { name: "Tailwind CSS", icon: <SiTailwindcss />, color: "#06B6D4" },
         { name: "React.js", icon: <FaReact />, color: "#61DAFB" },
         { name: "Next.js", icon: <SiNextdotjs />, color: "#000000" },
         { name: "Django", icon: <SiDjango />, color: "#092E20" },
-        { name: "Tailwind CSS", icon: <SiTailwindcss />, color: "#06B6D4" }
+        { name: "Spring Boot", icon: <SiSpringboot />, color: "#6DB33F" },
+        
       ]
     },
     {
@@ -44,15 +44,10 @@ const Skills = () => {
       ]
     },
     {
-      title: "Backend & APIs",
-      skills: [
-        { name: "Django REST Framework", icon: <FaServer />, color: "#092E20" }
-      ]
-    },
-    {
       title: "Database",
       skills: [
-        { name: "MySQL", icon: <SiMysql />, color: "#4479A1" }
+        { name: "MySQL", icon: <SiMysql />, color: "#4479A1" },
+        { name: "PostgreSQL", icon: <SiPostgresql />, color: "#336791" }
       ]
     },
     {
@@ -73,13 +68,6 @@ const Skills = () => {
         { name: "Postman", icon: <SiPostman />, color: "#FF6C37" }
       ]
     },
-    {
-      title: "Currently Learning",
-      skills: [
-        { name: "Spring Boot", icon: <SiSpringboot />, color: "#6DB33F" },
-        { name: "PostgreSQL", icon: <SiPostgresql />, color: "#336791" }
-      ]
-    }
   ];
 
   const containerVariants = {
