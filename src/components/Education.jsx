@@ -8,12 +8,14 @@ const Education = () => {
   const [filter, setFilter] = useState('all');
 
   const educationData = [
+
     {
+      
       id: 1,
       type: "education",
       title: "B.Sc. (Hons) in Information Technology",
       institution: "University of Moratuwa, Colombo",
-      date: "2023 - Present",
+      date: "May 2023 - Present",
       description: "I'm currently pursuing my degree with a keen interest in Software Development and DevOps Engineering.",
       icon: <FaGraduationCap />
     },
@@ -22,53 +24,61 @@ const Education = () => {
       type: "education",
       title: "Primary & Secondary Education",
       institution: "Jaffna Vayavilan Central College",
-      date: "2008 - 2021",
+      date: "Jan 2008 - Aug 2021",
       description: "Successfully completed GCE Ordinary Level with good results and GCE Advanced Level in Combined Mathematics, Physics, and Chemistry.",
       icon: <FaGraduationCap />
     },
 
+
     {
       id: 3,
-      type: "certificate",
-      title: "Algo Xplore 1.0 Hackathon",
-      institution: "NSBM Green University",
-      date: "2024",
-      description: "Participated in AlgoXplore 1.0 Hackathon, NSBM Green University  Gained experience in problem-solving, critical thinking, and teamwork.",
-      icon: <FaCertificate />
-    },
-    {
-      id: 4,
-      type: "certificate",
-      title: " CODE RUSH Coding Competition",
-      institution: "INTECS University of Moratuwa",
-      date: "2024",
-      description: "Participated in CodeRush Coding Competition, INTECS  University of Moratuwa  Gained experience in problem-solving, critical thinking, teamwork, time management, coding efficiency, and adaptability under pressure.",
-      icon: <FaCertificate />
-    },
-    {
-      id: 5,
-      type: "certificate",
-      title: "Foundations of Spring Boot & MVC Architecture – Coursera",
-      date: "2025",
-      description: "It introduces the basics of Spring Boot and the Model-View-Controller (MVC) design pattern, focusing on building structured, maintainable, and efficient Java web applications. It covers core concepts like controllers, services, views, and request handling",
-      icon: <FaCertificate />
-    },
-    {
-      id: 6,
-      type: "certificate",
-      title: "Full-Stack React with Spring Boot – Coursera",
-      date: "2025",
-      description: "It is a practical course that teaches how to build modern full-stack web applications using React for the frontend and Spring Boot for the backend. You’ll learn how to connect the two with REST APIs, manage data with databases, and deploy applications. The course covers building responsive UIs, handling authentication, and applying best practices for scalable app development.",
-      icon: <FaCertificate />
-    },
-    {
-      id: 7,
       type: "certificate",
       title: "Introduction to DevOps – Coursera",
       date: "2025 (In Progress)",
       description: "Completed a foundational course covering the principles of DevOps, including continuous integration, continuous delivery, automation, and collaboration between development and operations teams.",
       icon: <FaCertificate />
     },
+
+    {
+      id: 4,
+      type: "certificate",
+      title: "Foundations of Spring Boot & MVC Architecture – Coursera",
+      date: "Sep 2025",
+      description: "It introduces the basics of Spring Boot and the Model-View-Controller (MVC) design pattern, focusing on building structured, maintainable, and efficient Java web applications. It covers core concepts like controllers, services, views, and request handling",
+      icon: <FaCertificate />
+    },
+
+    {
+      id: 5,
+      type: "certificate",
+      title: "Full-Stack React with Spring Boot – Coursera",
+      date: "Aug 2025",
+      description: "It is a practical course that teaches how to build modern full-stack web applications using React for the frontend and Spring Boot for the backend. You’ll learn how to connect the two with REST APIs, manage data with databases, and deploy applications. The course covers building responsive UIs, handling authentication, and applying best practices for scalable app development.",
+      icon: <FaCertificate />
+    },
+
+     {
+      id: 6,
+      type: "certificate",
+      title: "Algo Xplore 1.0 Hackathon",
+      institution: "NSBM Green University",
+      date: "Jan 2024",
+      description: "Participated in AlgoXplore 1.0 Hackathon, NSBM Green University  Gained experience in problem-solving, critical thinking, and teamwork.",
+      icon: <FaCertificate />
+    },
+
+    {
+      id: 7,
+      type: "certificate",
+      title: " CODE RUSH Coding Competition",
+      institution: "INTECS University of Moratuwa",
+      date: "Nov 2024",
+      description: "Participated in CodeRush Coding Competition, INTECS  University of Moratuwa  Gained experience in problem-solving, critical thinking, teamwork, time management, coding efficiency, and adaptability under pressure.",
+      icon: <FaCertificate />
+    },
+  
+
+
   ];
 
   // Filter the education data based on the selected filter
