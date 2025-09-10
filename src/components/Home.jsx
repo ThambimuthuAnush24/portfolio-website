@@ -80,7 +80,7 @@ const Home = () => {
           <motion.a
             whileHover={{ scale: 1.1, backgroundColor: "rgba(66, 153, 225, 0.3)" }}
             whileTap={{ scale: 0.9 }}
-            href="./Anush-T.pdf" 
+            href="./Anush Thambimuthu.pdf" 
             download
             className="px-6 py-3 bg-transparent border-2 border-blue-600 text-white font-medium rounded-lg transition duration-300 flex items-center gap-2"
           >

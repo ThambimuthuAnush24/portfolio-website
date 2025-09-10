@@ -11,16 +11,27 @@ const Projects = () => {
 
     {
       id: 1,
+      title: "Automobile Service Management System",
+      description: "Developed a microservices-based system with modules for bookings, job assignment, parts inventory, billing, and live in-shop tracking, including role-based dashboards (Admin, Manager, Technician ) and a customer-facing front endContributions ",
+      image: "https://images.unsplash.com/photo-1530046339160-ce3e530c7d2f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      categories: ["fullstack"],
+      technologies: ["React", "Vite", "MongoDB","MySQL", "Tailwind CSS", "Spring Boot", "Node.js with Express.js", "Django", ".NET", "RabbitMQ"],
+      githubLink: "https://github.com/ThambimuthuAnush24/Automobile-Service-Management-System",
+      date: "In Progress"
+    },
+
+    {
+      id: 2,
       title: "Money Manager",
       description: "Built a fully functional Income Tracker application with category selection, emoji icons, record management, input validation, category filtering, confirmation modals, real-time notifications, and loading indicators to enhance responsiveness and user experience.",
-      image: "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1011&q=80",
       categories: ["fullstack"],
       technologies: ["React", "Tailwind CSS", "Spring Boot", "MySQL", "JWT Authentication"],
       githubLink: "https://github.com/ThambimuthuAnush24/full-stack",
       date: "In Progress"
     },
     {
-      id: 2,
+      id: 3,
       title: "Portfolio Website",
       description: "Personal portfolio website showcasing skills, projects, education, and contact information with modern animations and responsive design.",
       image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
@@ -30,7 +41,7 @@ const Projects = () => {
       date: "Aug 2025"
     },
     {
-      id: 3,
+      id: 4,
       title: "HABITRO - AI-Powered Habit Tracking App",
       description: "A gamified habit tracking platform with AI capabilities to help users develop good habits and track their progress through personalized recommendations.",
       image: "https://images.unsplash.com/photo-1506784365847-bbad939e9335?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
@@ -40,7 +51,7 @@ const Projects = () => {
       date: "Dec 2024 - Jul 2025"
     },
     {
-      id: 4,
+      id: 5,
       title: "Product Hub",
       description: "A full-featured application to manage electronic products with complete CRUD functionality.",
       image: "https://images.unsplash.com/photo-1468495244123-6c6c332eeece?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1021&q=80",
@@ -50,7 +61,7 @@ const Projects = () => {
       date: "June 2025"
     },
     {
-      id: 5,
+      id: 6,
       title: "EduManage REST Service",
       description: "A comprehensive student management system providing simple CRUD operations for student records through RESTful endpoints.",
       image: "https://images.unsplash.com/photo-1484417894907-623942c8ee29?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80",
@@ -60,7 +71,7 @@ const Projects = () => {
       date: "May 2025"
     },
     {
-      id: 6,
+      id: 7,
       title: "EX Studios - Movie Ticket Booking Platform",
       description: "A responsive movie ticket booking interface with seat selection, schedule viewing, and booking features with payment integration.",
       image: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1025&q=80",
@@ -70,7 +81,7 @@ const Projects = () => {
       date: "May 2024 - Jul 2024"
     },
     {
-      id: 7,
+      id: 8,
       title: "Automatic Jaggery Maker",
       description: "Arduino-based smart hardware project to automate the jaggery production process, improving efficiency and safety through sensor integration and process optimization.",
       image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
