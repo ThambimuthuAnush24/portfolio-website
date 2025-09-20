@@ -67,7 +67,7 @@ const About = () => {
             my IT abilities. My goal is to enhance the working environment while advancing my skills in the field of IT.
           </p>
           <p className="text-gray-400 leading-relaxed">
-            When I'm not coding, you can find me playing cricket, volleyball and carrom. I'm also actively involved in 
+            When I'm not coding, you can find me playing cricket, volleyball, Football and carrom. I'm also actively involved in 
             AIESEC as a Member & Team Leader and serve as a TLA Batch Coordinator.
           </p>
         </motion.div>

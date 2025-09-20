@@ -15,7 +15,7 @@ const Home = () => {
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
           transition={{ type: 'spring', stiffness: 100, delay: 0.1 }}
-          className="w-80 h-85 rounded-full overflow-hidden mx-auto mb-6 border-4 border-blue-500"
+          className="w-60 h-65 rounded-full overflow-hidden mx-auto mb-6 border-4 border-blue-500"
         >
           {/* Replace with your profile image */}
           <img
@@ -80,7 +80,7 @@ const Home = () => {
           <motion.a
             whileHover={{ scale: 1.1, backgroundColor: "rgba(66, 153, 225, 0.3)" }}
             whileTap={{ scale: 0.9 }}
-            href="./Anush Thambimuthu.pdf" 
+            href="./Anush Thambimuthu-CV.pdf" 
             download
             className="px-6 py-3 bg-transparent border-2 border-blue-600 text-white font-medium rounded-lg transition duration-300 flex items-center gap-2"
           >
