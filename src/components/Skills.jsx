@@ -10,7 +10,7 @@ import {
   SiDjango, SiMysql, SiPostgresql, 
   SiSpringboot, SiPostman, SiFirebase, SiCloudinary
 } from 'react-icons/si';
-import { VscAzure } from "react-icons/vsc";
+import { FaAws } from 'react-icons/fa';
 const Skills = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.2 });
@@ -54,7 +54,7 @@ const Skills = () => {
       title: "Cloud",
       skills: [
         { name: "Cloudinary", icon: <SiCloudinary />, color: "#3448C5" },
-        { name: "Azure", icon: <VscAzure />, color: "#0078D4" },
+        { name: "AWS", icon: <FaAws />, color: "#FF9900" },
         { name: "Firebase", icon: <SiFirebase />, color: "#FFCA28" }
       ]
     },
