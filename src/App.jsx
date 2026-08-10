@@ -4,6 +4,7 @@ import './App.css'
 import Navbar from './components/Navbar'
 import Home from './components/Home'
 import About from './components/About'
+import Experience from './components/Experience'
 import Skills from './components/Skills'
 import Projects from './components/Projects'
 import Education from './components/Education'
@@ -45,6 +46,9 @@ function App() {
         </section>
         <section id="about" className="py-20">
           <About />
+        </section>
+        <section id="experience" className="py-20">
+          <Experience />
         </section>
         <section id="skills" className="py-20">
           <Skills />

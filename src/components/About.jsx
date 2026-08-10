@@ -93,7 +93,7 @@ const About = () => {
                 </div>
                 <div>
                   <h4 className="text-lg font-medium">Role</h4>
-                  <p className="text-gray-400">Software Engineer Intern</p>
+                  <p className="text-gray-400">Associate Software Engineer</p>
                 </div>
               </div>
 

@@ -3,6 +3,8 @@ import { FaGithub, FaLinkedin, FaTwitter, FaDownload } from 'react-icons/fa';
 import profile from "../assets/dhanush.jpg"
 
 const Home = () => {
+  const cvUrl = `${import.meta.env.BASE_URL}Associate%20Software%20Engineer%20-Anush%20Thambimuthu_CV.pdf`;
+
   return (
     <div className="min-h-screen flex flex-col justify-center items-center text-center">
       <motion.div
@@ -40,7 +42,7 @@ const Home = () => {
           transition={{ delay: 0.7, duration: 0.8 }}
           className="text-2xl md:text-3xl font-medium text-gray-300 mb-6"
         >
-          Software Engineer Intern
+          Associate Software Engineer
         </motion.h2>
 
         <motion.p
@@ -80,7 +82,7 @@ const Home = () => {
           <motion.a
             whileHover={{ scale: 1.1, backgroundColor: "rgba(66, 153, 225, 0.3)" }}
             whileTap={{ scale: 0.9 }}
-            href="./Software Engineer Intern-Anush Thambimuthu_CV.pdf" 
+            href={cvUrl}
             download
             className="px-6 py-3 bg-transparent border-2 border-blue-600 text-white font-medium rounded-lg transition duration-300 flex items-center gap-2"
           >
