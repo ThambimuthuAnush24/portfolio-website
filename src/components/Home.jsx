@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { FaGithub, FaLinkedin, FaTwitter, FaDownload } from 'react-icons/fa';
-import profile from "../assets/dhanush.jpg"
+import profile from "../assets/dhanush.png"
 
 const Home = () => {
   const cvUrl = `${import.meta.env.BASE_URL}Associate%20Software%20Engineer%20-Anush%20Thambimuthu_CV.pdf`;
@@ -17,13 +17,13 @@ const Home = () => {
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
           transition={{ type: 'spring', stiffness: 100, delay: 0.1 }}
-          className="w-60 h-65 rounded-full overflow-hidden mx-auto mb-6 border-4 border-blue-500"
+          className="w-72 h-72 md:w-80 md:h-80 rounded-full overflow-hidden mx-auto mb-6 border-4 border-blue-500"
         >
           {/* Replace with your profile image */}
           <img
             src={profile}
             alt="Profile"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover object-[center_20%]"
           />
         </motion.div>
 
