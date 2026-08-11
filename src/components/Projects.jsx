@@ -17,7 +17,7 @@ const Projects = () => {
       categories: ["fullstack"],
       technologies: ["React", "Vite", "MongoDB","MySQL", "Tailwind CSS", "Spring Boot", "Node.js with Express.js", "Django", ".NET", "RabbitMQ"],
       githubLink: "https://github.com/ThambimuthuAnush24/Automobile-Service-Management-System",
-      date: "In Progress"
+      date: "Sep 2025"
     },
 
     {
@@ -28,7 +28,7 @@ const Projects = () => {
       categories: ["fullstack"],
       technologies: ["React", "Tailwind CSS", "Spring Boot", "MySQL", "JWT Authentication"],
       githubLink: "https://github.com/ThambimuthuAnush24/full-stack",
-      date: "In Progress"
+      date: "Oct 2025"
     },
     {
       id: 3,

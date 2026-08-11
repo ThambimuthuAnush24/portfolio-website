@@ -2,13 +2,13 @@ import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { 
   FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaPython,
-  FaDatabase, FaGit, FaJava, FaServer, FaGithub, FaDocker
+  FaDatabase, FaGit, FaJava, FaServer, FaGithub, FaDocker, FaCode
 } from 'react-icons/fa';
 import { VscVscode } from "react-icons/vsc";
 import { 
   SiDart, SiFlutter, SiNextdotjs, SiTailwindcss, 
   SiDjango, SiMysql, SiPostgresql, 
-  SiSpringboot, SiPostman, SiFirebase, SiCloudinary
+  SiSpringboot, SiPostman, SiFirebase, SiCloudinary, SiFastapi, SiRailway
 } from 'react-icons/si';
 import { FaAws } from 'react-icons/fa';
 const Skills = () => {
@@ -34,6 +34,7 @@ const Skills = () => {
         { name: "Next.js", icon: <SiNextdotjs />, color: "#000000" },
         { name: "Django", icon: <SiDjango />, color: "#092E20" },
         { name: "Spring Boot", icon: <SiSpringboot />, color: "#6DB33F" },
+        { name: "FastAPI", icon: <SiFastapi />, color: "#009688" },
         
       ]
     },
@@ -55,7 +56,8 @@ const Skills = () => {
       skills: [
         { name: "Cloudinary", icon: <SiCloudinary />, color: "#3448C5" },
         { name: "AWS", icon: <FaAws />, color: "#FF9900" },
-        { name: "Firebase", icon: <SiFirebase />, color: "#FFCA28" }
+        { name: "Firebase", icon: <SiFirebase />, color: "#FFCA28" },
+        { name: "Railway", icon: <SiRailway />, color: "#0B0D0E" }
       ]
     },
   
@@ -65,7 +67,9 @@ const Skills = () => {
         { name: "Git", icon: <FaGit />, color: "#F05032" },
         { name: "GitHub", icon: <FaGithub />, color: "#181717" },
         { name: "VS Code", icon: < VscVscode />, color: "#007ACC" },
-        { name: "Postman", icon: <SiPostman />, color: "#FF6C37" }
+        { name: "Postman", icon: <SiPostman />, color: "#FF6C37" },
+        { name: "Cursor", icon: <FaCode />, color: "#ffffff" },
+        { name: "Codex", icon: <FaCode />, color: "#9CA3AF" }
       ]
     },
   ];
